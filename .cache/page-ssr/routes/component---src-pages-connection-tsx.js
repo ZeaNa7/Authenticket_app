@@ -2008,7 +2008,7 @@ const SubTextLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_6__["default"]
   displayName: "connection__SubTextLink"
 })(["font-size:0.8em;color:white;margin:0;padding:0;text-decoration:none;"]);
 const Connection = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Connexion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  size: 50
+  size: 40
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupInput, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
   style: {
     display: "block"
@@ -2157,7 +2157,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
-const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}"]);
+const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyle);
 
 /***/ }),

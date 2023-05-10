@@ -1964,41 +1964,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles */ "./src/styles/styles.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var _components_buttonBlue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/buttonBlue */ "./src/components/buttonBlue.js");
 /* harmony import */ var _components_buttonDarkBlue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/buttonDarkBlue */ "./src/components/buttonDarkBlue.js");
+/* harmony import */ var _components_space__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/space */ "./src/components/space.js");
 
 
 
 
 
 
-const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "inscription__Wrapper"
 })(["z-index:0;display:flex;height:100vh;background-color:white;background-position:center;background-repeat:no-repeat;background-size:cover;color:#0c134f"]);
-const ImageContent = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const ImageContent = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "inscription__ImageContent"
 })(["z-index:1;display:flex;flex-direction:column;height:100vh;color:#0c134f;width:50%;height:90%;background:rgb(230,115,36);background:linear-gradient(0deg,rgba(230,115,36,1) 5%,rgba(245,45,143,1) 85%);border-radius:0 10% 10% 0;text-align:center;"]);
-const Logo = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].img.withConfig({
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].img.withConfig({
   displayName: "inscription__Logo"
 })(["margin-top:5%;height:60px;"]);
-const TextContent = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const TextContent = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "inscription__TextContent"
 })(["display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;color:#0c134f;width:50%;"]);
-const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "inscription__GroupInput"
-})(["width:50%;"]);
-const Input = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].input.withConfig({
+})(["display:flex;justify-content:space-between;width:90%;"]);
+const Input = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].input.withConfig({
   displayName: "inscription__Input"
 })(["background-color:white;color:black;border-radius:10px;width:100%;height:25px;border:solid 1px #19a7ce;cursor:pointer;"]);
-const BottomBar = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const BottomBar = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "inscription__BottomBar"
 })(["position:absolute;display:flex;bottom:0;left:0;height:10%;flex-direction:row;justify-content:space-between;align-items:center;width:45%;color:#0c134f;margin-left:10px;"]);
-const SubTextLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, props)).withConfig({
+const SubTextLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_6__["default"])(props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, props)).withConfig({
   displayName: "inscription__SubTextLink"
 })(["font-size:0.8em;color:#0c134f;margin:0;padding:0;text-decoration:none;"]);
+const InputForm = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "inscription__InputForm"
+})(["display:flex;flex-direction:column;justify-content:center;color:#0c134f;width:45%;left:0;"]);
 const Inscription = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
   src: "../images/logo.svg",
   alt: "Logo"
@@ -2006,23 +2011,51 @@ const Inscription = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defaul
   src: "../images/logo_bleu_authenticket.svg",
   alt: "Logo",
   height: 25
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Mentions l\xE9gales"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Conditions d'utilisations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Plan du site")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Inscription"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupInput, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Mentions l\xE9gales"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Conditions d'utilisations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Plan du site")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Inscription"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  size: 15
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InputForm, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
   style: {
     display: "block"
   }
 }, "Pseudo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
   type: "text",
   name: "pseudo"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupInput, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InputForm, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  style: {
+    display: "block"
+  }
+}, "Nom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
+  type: "text",
+  name: "last-name"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InputForm, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  style: {
+    display: "block"
+  }
+}, "Pr\xE9nom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
+  type: "text",
+  name: "first-name"
+}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InputForm, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  style: {
+    display: "block"
+  }
+}, "Adresse email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
+  type: "text",
+  name: "mail"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupInput, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InputForm, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
   style: {
     display: "block"
   }
 }, "Mot de passe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
   type: "password",
   name: "password"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/"
-}, "Mot de passe oubli\xE9 ?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonBlue__WEBPACK_IMPORTED_MODULE_3__["default"], {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InputForm, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+  style: {
+    display: "block"
+  }
+}, "Confirmation mot de passe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
+  type: "password",
+  name: "password"
+}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonBlue__WEBPACK_IMPORTED_MODULE_3__["default"], {
   to: "/"
 }, "Inscription"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "D\xE9j\xE0 un compte ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonDarkBlue__WEBPACK_IMPORTED_MODULE_4__["default"], {
   to: "/connection"
@@ -2097,6 +2130,34 @@ const ButtonDarkBlue = ({
 
 /***/ }),
 
+/***/ "./src/components/space.js":
+/*!*********************************!*\
+  !*** ./src/components/space.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Space = ({
+  size
+}) => {
+  const spacing = `${size}px`;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      marginTop: spacing
+    }
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Space);
+
+/***/ }),
+
 /***/ "./src/styles/styles.js":
 /*!******************************!*\
   !*** ./src/styles/styles.js ***!
@@ -2110,7 +2171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
-const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}"]);
+const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyle);
 
 /***/ }),
