@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   z-index: 0;
   display: flex;
   height: 100vh;
-  background-color: #0c134f;
+  background-image: url("../images/frame-bleu.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,10 +25,10 @@ const ImageContent = styled.div`
   background-color: red;
   width: 50%;
   height: 90%;
-  background: rgb(230,115,36);
-  background: linear-gradient(0deg, rgba(230,115,36,1) 5%, rgba(245,45,143,1) 85%);
+  background-image: url("../images/font_final.png");
   border-radius: 10% 0 0 10%;
   text-align: center;
+  justify-content: center;
 `;
 
 const Logo = styled.img`
@@ -57,12 +57,11 @@ const Input = styled.input`
   cursor: pointer;
 `;
 
-const Space20 = styled.div`
-  height: 20px;
-`;
-
-const Space40 = styled.div`
-  height: 40px;
+const Title = styled.div`
+  top: 408px;
+  width: 70%;
+  height: 40%;
+  margin-left: 15%;
 `;
 
 
@@ -90,38 +89,40 @@ const SubTextLink = styled(props => <Link {...props} />)`
 
 const Connection = () =>
 
-        <>
-        <GlobalStyle />
-        <Wrapper>
-            <TextContent>
-            <h1>Connexion</h1>
-            <Space size={40} />
-            <GroupInput>
-                <label style={{ display: "block" }}>Pseudo</label>
-                <Input type="text" name="pseudo" />
-                <Space size={15} />
-                <label style={{ display: "block" }}>Mot de passe</label>
-                <Input type="password" name="password" />
-                <Link to="/">Mot de passe oublié ?</Link>
-            </GroupInput>
-            <Space size={20}/>
-            <ButtonBlue to="/inscription">Connexion</ButtonBlue>
-            <Space size={40}/>
-            <SubTextLink>Pas encore inscrit ?</SubTextLink>
-            <ButtonWhite to="/inscription">Inscription</ButtonWhite>
-            </TextContent>
+  <>
+    <GlobalStyle />
+    <Wrapper>
+      <TextContent>
+        <h1>Connexion</h1>
+        <Space size={40} />
+        <GroupInput>
+          <label style={{ display: "block" }}>Pseudo</label>
+          <Input type="text" name="pseudo" />
+          <Space size={15} />
+          <label style={{ display: "block" }}>Mot de passe</label>
+          <Input type="password" name="password" />
+          <Link to="/">Mot de passe oublié ?</Link>
+        </GroupInput>
+        <Space size={20} />
+        <ButtonBlue to="/inscription">Connexion</ButtonBlue>
+        <Space size={40} />
+        <SubTextLink>Pas encore inscrit ?</SubTextLink>
+        <ButtonWhite to="/inscription">Inscription</ButtonWhite>
+      </TextContent>
 
-            <ImageContent>
-            <Logo src="../images/logo.svg" alt="Logo" />
-            <h2>Strong authentication of your tickets</h2>
-            </ImageContent>
-            <BottomBar>
-            <SubTextLink Link to="/">Mentions légales</SubTextLink>
-            <SubTextLink>Conditions d'utilisations</SubTextLink>
-            <SubTextLink>Plan du site</SubTextLink>
-            <img src="../images/logo.svg" alt="Logo" height={25}/>
-            </BottomBar>
-        </Wrapper>
-        </>
-        ;
+      <ImageContent>
+        <Title>
+          <Logo src="../images/logo.svg" alt="Logo" />
+          <h2>Strong authentication of your tickets</h2>
+        </Title>
+      </ImageContent>
+      <BottomBar>
+        <SubTextLink Link to="/">Mentions légales</SubTextLink>
+        <SubTextLink>Conditions d'utilisations</SubTextLink>
+        <SubTextLink>Plan du site</SubTextLink>
+        <img src="../images/logo.svg" alt="Logo" height={25} />
+      </BottomBar>
+    </Wrapper>
+  </>
+  ;
 export default Connection;

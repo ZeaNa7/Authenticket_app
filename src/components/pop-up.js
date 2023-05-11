@@ -60,6 +60,15 @@ const Title = styled.p`
     margin-bottom: 40px;
 `;
 
+const GroupTitle = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+`;
+
+
 const Popup = ({ isOpen, onClose, onConfirm }) => {
     if (!isOpen) {
       return null;
@@ -68,7 +77,10 @@ const Popup = ({ isOpen, onClose, onConfirm }) => {
     return (
       <PopupContainer>
         <PopupContent>
+        <GroupTitle>
+        <img src="../images/validate.svg" alt="Autenticket" />
           <Title>Ticket authentifié !</Title>
+          </GroupTitle>
           <p>Voulez-vous ajouter l'évènement à votre porte-feuille ?</p>
   
           <ButtonContainer>

@@ -97,10 +97,10 @@ const handleConfirmPopup = () => {
             </GroupInput>
             <Space size={10}/>
             <ButtonBlue to="/">Envoyer</ButtonBlue>
-            {/* <button onClick={handleOpenPopup}>Ouvrir le pop-up</button> */}
+            <button onClick={handleOpenPopup}>Ouvrir le pop-up</button>
             <Space size={10}/>
             <SubTextLink>Retour à la connexion ?</SubTextLink>
-            <ButtonWhite to="/connection">Connexion</ButtonWhite>
+            <ButtonWhite to="/connection">Connexion <img style={{marginLeft: 10}} src="../images/logo-without-text.svg" alt="logo"></img> </ButtonWhite>
             </TextContent>
         </Wrapper>
         <Popup

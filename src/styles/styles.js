@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 3rem;
   }
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: white;
     font-style: italic;
     font-style: bold;
