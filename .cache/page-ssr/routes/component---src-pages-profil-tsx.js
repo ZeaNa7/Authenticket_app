@@ -1972,17 +1972,49 @@ const ProfilePage = () => {
     firstName: 'John',
     lastName: 'Doe',
     email: 'johndoe@example.com',
-    photoUrl: 'https://example.com/profile-photo.jpg'
+    photoUrl: '../images/logo-without-text.svg'
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Page de profil"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_userProfil__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_userProfil__WEBPACK_IMPORTED_MODULE_1__["default"], {
     firstName: user.firstName,
     lastName: user.lastName,
-    email: user.email
-    // photoUrl={user.photoUrl}
-  }));
+    email: user.email,
+    photoUrl: user.photoUrl
+  });
 };
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProfilePage);
+
+/***/ }),
+
+/***/ "./src/components/buttonWhite.js":
+/*!***************************************!*\
+  !*** ./src/components/buttonWhite.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+
+const Button = (0,styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link).withConfig({
+  displayName: "buttonWhite__Button"
+})(["color:#0c134f;background-color:white;font-size:1em;margin:20px;border:none;border-radius:20px;cursor:pointer;height:35px;width:150px;font-weight:bold;font-style:italic;margin-top:5px;text-decoration:none;justify-content:center;align-items:center;display:flex;"]);
+const ButtonWhite = ({
+  to,
+  children
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button, {
+    to: to
+  }, children);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonWhite);
 
 /***/ }),
 
@@ -2000,39 +2032,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/styles */ "./src/styles/styles.js");
+/* harmony import */ var _buttonWhite__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttonWhite */ "./src/components/buttonWhite.js");
 
 
 
 
-const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "userProfil__Wrapper"
-})(["z-index:0;display:flex;height:100vh;background-color:#0c134f;background-position:center;background-repeat:no-repeat;background-size:cover;"]);
-const LeftBar = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+})(["z-index:0;display:flex;height:100vh;background-image:url(\"../images/frame-bleu.svg\");background-position:center;background-repeat:no-repeat;background-size:cover;"]);
+const LeftBar = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "userProfil__LeftBar"
-})(["position:absolute;top:0;left:0;width:20%;height:100%;flex-direction:column;align-items:center;"]);
-const UserProfileContainer = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+})(["top:0;left:0;width:20%;height:100%;flex-direction:column;align-items:center;justify-content:center;margin:20px 0 0 20px;"]);
+const UserProfileContainer = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "userProfil__UserProfileContainer"
-})(["", " align-items:center;z-index:1;background-color:#5C469C;right:0;height:300px;width:300px;"], '' /* display: flex; */);
-
-const UserPhoto = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
+})(["z-index:1;background-color:#5C469C;right:0;height:60%;width:70%;margin:10% 15% 0 10%;border-radius:15px;display:flex;flex-direction:row;"]);
+const UserPhoto = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].img.withConfig({
   displayName: "userProfil__UserPhoto"
-})(["width:100px;height:100px;object-fit:cover;border-radius:50%;"]);
-const UserInfo = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
+})(["width:40%;height:100px;object-fit:cover;border-radius:50%;"]);
+const UserInfo = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "userProfil__UserInfo"
-})(["display:flex;flex-direction:column;"]);
+})(["display:flex;flex-direction:column;width:60%;"]);
+const RigthButton = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
+  displayName: "userProfil__RigthButton"
+})(["position:absolute;display:flex;top:0;right:0;height:100px;margin-right:13%;margin-top:20px;"]);
 const UserProfile = ({
   firstName,
   lastName,
-  email
+  email,
+  photoUrl
 }) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(LeftBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
     src: "../images/logo.svg",
-    alt: "Autenticket"
+    alt: "Authenticket"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
     to: ""
-  }, "Evenements")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(UserProfileContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(UserInfo, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Nom : ", lastName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Pr\xE9nom : ", firstName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Email : ", email)))));
+  }, "Profil"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: ""
+  }, "Evenements")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(UserProfileContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(UserPhoto, {
+    src: photoUrl,
+    alt: "Photo de profil"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(UserInfo, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Nom : ", lastName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Pr\xE9nom : ", firstName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("p", null, "Email : ", email))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(RigthButton, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_buttonWhite__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    style: {
+      width: '400px'
+    }
+  }, "Authentifier un ticket"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UserProfile);
 
@@ -2051,7 +2097,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
-const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
+const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.5rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyle);
 
 /***/ }),

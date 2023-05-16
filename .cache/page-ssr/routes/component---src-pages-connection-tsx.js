@@ -1979,10 +1979,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "connection__Wrapper"
-})(["z-index:0;display:flex;height:100vh;background-color:#0c134f;background-position:center;background-repeat:no-repeat;background-size:cover;"]);
+})(["z-index:0;display:flex;height:100vh;background-image:url(\"../images/frame-bleu.svg\");background-position:center;background-repeat:no-repeat;background-size:cover;"]);
 const ImageContent = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "connection__ImageContent"
-})(["z-index:1;display:flex;flex-direction:column;height:100vh;color:white;background-color:red;width:50%;height:90%;background:rgb(230,115,36);background:linear-gradient(0deg,rgba(230,115,36,1) 5%,rgba(245,45,143,1) 85%);border-radius:10% 0 0 10%;text-align:center;"]);
+})(["z-index:1;display:flex;flex-direction:column;height:100vh;color:white;background-color:red;width:50%;height:90%;background-image:url(\"../images/font_final.png\");border-radius:10% 0 0 10%;text-align:center;justify-content:center;"]);
 const Logo = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].img.withConfig({
   displayName: "connection__Logo"
 })(["margin-top:5%;height:60px;"]);
@@ -1995,12 +1995,9 @@ const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div
 const Input = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].input.withConfig({
   displayName: "connection__Input"
 })(["background-color:white;color:black;border-radius:10px;width:100%;height:25px;border:solid 1px #19a7ce;cursor:pointer;"]);
-const Space20 = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "connection__Space20"
-})(["height:20px;"]);
-const Space40 = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "connection__Space40"
-})(["height:40px;"]);
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "connection__Title"
+})(["top:408px;width:70%;height:40%;margin-left:15%;"]);
 const BottomBar = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "connection__BottomBar"
 })(["position:absolute;display:flex;bottom:0;right:0;height:10%;flex-direction:row;justify-content:space-between;align-items:center;width:45%;color:white;margin-right:10px;"]);
@@ -2035,10 +2032,10 @@ const Connection = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default
   size: 40
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Pas encore inscrit ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonWhite__WEBPACK_IMPORTED_MODULE_4__["default"], {
   to: "/inscription"
-}, "Inscription")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
+}, "Inscription")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
   src: "../images/logo.svg",
   alt: "Logo"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Strong authentication of your tickets")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BottomBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Strong authentication of your tickets"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BottomBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, {
   Link: true,
   to: "/"
 }, "Mentions l\xE9gales"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Conditions d'utilisations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Plan du site"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -2157,7 +2154,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
-const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
+const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.5rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyle);
 
 /***/ }),

@@ -2031,11 +2031,19 @@ const Index = () => {
     size: 10
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonBlue__WEBPACK_IMPORTED_MODULE_4__["default"], {
     to: "/"
-  }, "Envoyer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Envoyer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: handleOpenPopup
+  }, "Ouvrir le pop-up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 10
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Retour \xE0 la connexion ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonWhite__WEBPACK_IMPORTED_MODULE_3__["default"], {
     to: "/connection"
-  }, "Connexion"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_pop_up__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Connexion ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    style: {
+      marginLeft: 10
+    },
+    src: "../images/logo-without-text.svg",
+    alt: "logo"
+  }), " "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_pop_up__WEBPACK_IMPORTED_MODULE_6__["default"], {
     isOpen: isPopupOpen,
     onClose: handleClosePopup,
     onConfirm: handleConfirmPopup
@@ -2145,6 +2153,9 @@ const Button2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
   displayName: "pop-up__Title"
 })(["color:white;font-size:1.5rem;font-style:normal;margin-bottom:40px;"]);
+const GroupTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "pop-up__GroupTitle"
+})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;width:70%;"]);
 const Popup = ({
   isOpen,
   onClose,
@@ -2153,7 +2164,10 @@ const Popup = ({
   if (!isOpen) {
     return null;
   }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "Ticket authentifi\xE9 !"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Voulez-vous ajouter l'\xE9v\xE8nement \xE0 votre porte-feuille ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button1, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupTitle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "../images/validate.svg",
+    alt: "Autenticket"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "Ticket authentifi\xE9 !")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Voulez-vous ajouter l'\xE9v\xE8nement \xE0 votre porte-feuille ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button1, {
     onClick: onClose
   }, "Non"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button2, {
     onClick: onConfirm
@@ -2204,7 +2218,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
-const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.8rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
+const GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobalStyle)(["html{overflow-y:hidden;height:100vh;margin-top:0;@media (max-width:768px){overflow-y:scroll;}}body{margin:0;padding:0;font-family:'Montserrat',sans-serif;font-style:italic;position:relative;}h1{font-family:'Montserrat',sans-serif;font-size:3rem;}h2{font-size:2.5rem;color:white;font-style:italic;font-style:bold;}label{font-weight:bold;}p{margin-bottom:0;color:white;}"]);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (GlobalStyle);
 
 /***/ }),
