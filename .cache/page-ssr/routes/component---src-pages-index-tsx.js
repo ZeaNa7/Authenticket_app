@@ -1964,90 +1964,70 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 /* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles */ "./src/styles/styles.js");
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _components_buttonWhite__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/buttonWhite */ "./src/components/buttonWhite.js");
-/* harmony import */ var _components_buttonBlue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/buttonBlue */ "./src/components/buttonBlue.js");
-/* harmony import */ var _components_space__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/space */ "./src/components/space.js");
-/* harmony import */ var _components_pop_up__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/pop-up */ "./src/components/pop-up.js");
+/* harmony import */ var _components_buttonBlue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/buttonBlue */ "./src/components/buttonBlue.js");
+/* harmony import */ var _components_space__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/space */ "./src/components/space.js");
+/* harmony import */ var _components_buttonWhite__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/buttonWhite */ "./src/components/buttonWhite.js");
 
 
 
 
 
 
-
-
-const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "pages__Wrapper"
-})(["display:flex;flex-direction:column;height:100vh;background-color:#0c134f;background-position:center;background-repeat:no-repeat;background-size:cover;"]);
-const TopBar = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+})(["display:flex;flex-direction:column;height:100vh;background-image:url(\"../images/font_final.png\");background-position:center;background-repeat:no-repeat;background-size:cover;"]);
+const TopBar = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "pages__TopBar"
-})(["display:flex;justify-content:flex-end;align-items:center;height:100px;margin:2%  8% 10% 0;"]);
-const Logo = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].img.withConfig({
+})(["display:flex;align-items:space-evenly;height:100px;padding:2%  10% 0 10%;"]);
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].img.withConfig({
   displayName: "pages__Logo"
 })(["height:60px;"]);
-const TextContent = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+const TextContent = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "pages__TextContent"
-})(["display:flex;flex-direction:column;justify-content:center;align-items:center;height:100px;color:white;margin-top:40px;"]);
-const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
+})(["display:flex;justify-content:flex-start;align-items:center;height:100px;color:white;padding:5% 10% 0 10%;"]);
+const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
   displayName: "pages__GroupInput"
 })(["width:50%;"]);
-const Input = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].input.withConfig({
+const Input = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].input.withConfig({
   displayName: "pages__Input"
 })(["background-color:white;color:black;border-radius:10px;width:100%;height:25px;border:solid 1px #19a7ce;cursor:pointer;"]);
-const SubTextLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_7__["default"])(props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, props)).withConfig({
-  displayName: "pages__SubTextLink"
-})(["font-size:0.8em;color:white;margin:0;padding:0;text-decoration:none;"]);
 const Index = () => {
-  const {
-    0: isPopupOpen,
-    1: setIsPopupOpen
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const handleOpenPopup = () => {
-    setIsPopupOpen(true);
-  };
-  const handleClosePopup = () => {
-    setIsPopupOpen(false);
-  };
-  const handleConfirmPopup = () => {
-    // Effectuez des actions spécifiques à la confirmation du pop-up
-    setIsPopupOpen(false);
-  };
+  // const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // const handleOpenPopup = () => {
+  //   setIsPopupOpen(true);
+  // };
+
+  // const handleClosePopup = () => {
+  //   setIsPopupOpen(false);
+  // };
+
+  // const handleConfirmPopup = () => {
+  //   // Effectuez des actions spécifiques à la confirmation du pop-up
+  //   setIsPopupOpen(false);
+  // };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TopBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
     src: "../images/logo.svg",
     alt: "Logo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Mot de passe oubli\xE9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonWhite__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    to: "/login"
+  }, "Connexion")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Strong authentification of your ticket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 30
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupInput, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     style: {
       display: "block"
     }
-  }, "Adresse email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
+  }, "Num\xE9ro de ticket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Input, {
     type: "text",
-    name: "email"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Veuillez entrer votre adresse e-mail. Les instructions pour r\xE9initialiser votre mot de passe vous seront envoy\xE9 imm\xE9diatement.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    name: "text"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 10
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonBlue__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonBlue__WEBPACK_IMPORTED_MODULE_2__["default"], {
     to: "/"
-  }, "Envoyer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: handleOpenPopup
-  }, "Ouvrir le pop-up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    size: 10
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SubTextLink, null, "Retour \xE0 la connexion ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonWhite__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    to: "/connection"
-  }, "Connexion ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    style: {
-      marginLeft: 10
-    },
-    src: "../images/logo-without-text.svg",
-    alt: "logo"
-  }), " "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_pop_up__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    isOpen: isPopupOpen,
-    onClose: handleClosePopup,
-    onConfirm: handleConfirmPopup
-  }));
+  }, "Envoyer"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
@@ -2116,64 +2096,6 @@ const ButtonWhite = ({
   }, children);
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonWhite);
-
-/***/ }),
-
-/***/ "./src/components/pop-up.js":
-/*!**********************************!*\
-  !*** ./src/components/pop-up.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-
-
-const PopupContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "pop-up__PopupContainer"
-})(["position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;"]);
-const PopupContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "pop-up__PopupContent"
-})(["background-color:#0c134f;padding:20px;border-radius:10px;display:flex;flex-direction:column;align-items:center;"]);
-const ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "pop-up__ButtonContainer"
-})(["display:flex;justify-content:center;margin-top:30px;"]);
-const Button1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
-  displayName: "pop-up__Button1"
-})(["margin-left:10px;border-radius:15px;border:none;text-decoration:none;color:#0c134f;width:50px;height:30px;margin-right:20px;font-weight:bold;"]);
-const Button2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
-  displayName: "pop-up__Button2"
-})(["margin-left:10px;border-radius:15px;border:none;text-decoration:none;color:white;width:50px;height:30px;background-color:#19a7ce;font-weight:bold;"]);
-const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
-  displayName: "pop-up__Title"
-})(["color:white;font-size:1.5rem;font-style:normal;margin-bottom:40px;"]);
-const GroupTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "pop-up__GroupTitle"
-})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;width:70%;"]);
-const Popup = ({
-  isOpen,
-  onClose,
-  onConfirm
-}) => {
-  if (!isOpen) {
-    return null;
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupTitle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "../images/validate.svg",
-    alt: "Autenticket"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "Ticket authentifi\xE9 !")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Voulez-vous ajouter l'\xE9v\xE8nement \xE0 votre porte-feuille ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button1, {
-    onClick: onClose
-  }, "Non"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button2, {
-    onClick: onConfirm
-  }, "Oui"))));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popup);
 
 /***/ }),
 
