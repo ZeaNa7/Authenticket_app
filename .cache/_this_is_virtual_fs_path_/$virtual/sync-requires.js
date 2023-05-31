@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-forgotten-password-tsx": preferDefault(require("C:\\Dev\\Authenticket_v1\\authenticket\\src\\pages\\forgotten-password.tsx")),
   "component---src-pages-index-tsx": preferDefault(require("C:\\Dev\\Authenticket_v1\\authenticket\\src\\pages\\index.tsx")),
   "component---src-pages-inscription-tsx": preferDefault(require("C:\\Dev\\Authenticket_v1\\authenticket\\src\\pages\\inscription.tsx")),
-  "component---src-pages-profil-tsx": preferDefault(require("C:\\Dev\\Authenticket_v1\\authenticket\\src\\pages\\profil.tsx"))
+  "component---src-pages-profil-tsx": preferDefault(require("C:\\Dev\\Authenticket_v1\\authenticket\\src\\pages\\profil.tsx")),
+  "component---src-pages-test-tsx": preferDefault(require("C:\\Dev\\Authenticket_v1\\authenticket\\src\\pages\\test.tsx"))
 }
 

@@ -844,7 +844,8 @@ exports.components = {
   "component---src-pages-forgotten-password-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-forgotten-password-tsx */ "component---src-pages-forgotten-password-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/forgotten-password.tsx?export=default */ "./src/pages/forgotten-password.tsx?export=default")),
   "component---src-pages-index-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-index-tsx */ "component---src-pages-index-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.tsx?export=default */ "./src/pages/index.tsx?export=default")),
   "component---src-pages-inscription-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-inscription-tsx */ "component---src-pages-inscription-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/inscription.tsx?export=default */ "./src/pages/inscription.tsx?export=default")),
-  "component---src-pages-profil-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-profil-tsx */ "component---src-pages-profil-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/profil.tsx?export=default */ "./src/pages/profil.tsx?export=default"))
+  "component---src-pages-profil-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-profil-tsx */ "component---src-pages-profil-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/profil.tsx?export=default */ "./src/pages/profil.tsx?export=default")),
+  "component---src-pages-test-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-test-tsx */ "component---src-pages-test-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/test.tsx?export=default */ "./src/pages/test.tsx?export=default"))
 };
 
 exports.head = {};
@@ -6416,6 +6417,39 @@ module.exports = require("crypto");
 
 /***/ }),
 
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "punycode":
+/*!***************************!*\
+  !*** external "punycode" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("punycode");
+
+/***/ }),
+
 /***/ "stream":
 /*!*************************!*\
   !*** external "stream" ***!
@@ -6424,6 +6458,28 @@ module.exports = require("crypto");
 
 "use strict";
 module.exports = require("stream");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 

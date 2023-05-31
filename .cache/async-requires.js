@@ -4,7 +4,8 @@ exports.components = {
   "component---src-pages-forgotten-password-tsx": () => import("./../../../src/pages/forgotten-password.tsx?export=default" /* webpackChunkName: "component---src-pages-forgotten-password-tsx" */),
   "component---src-pages-index-tsx": () => import("./../../../src/pages/index.tsx?export=default" /* webpackChunkName: "component---src-pages-index-tsx" */),
   "component---src-pages-inscription-tsx": () => import("./../../../src/pages/inscription.tsx?export=default" /* webpackChunkName: "component---src-pages-inscription-tsx" */),
-  "component---src-pages-profil-tsx": () => import("./../../../src/pages/profil.tsx?export=default" /* webpackChunkName: "component---src-pages-profil-tsx" */)
+  "component---src-pages-profil-tsx": () => import("./../../../src/pages/profil.tsx?export=default" /* webpackChunkName: "component---src-pages-profil-tsx" */),
+  "component---src-pages-test-tsx": () => import("./../../../src/pages/test.tsx?export=default" /* webpackChunkName: "component---src-pages-test-tsx" */)
 }
 
 
