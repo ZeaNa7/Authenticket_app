@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GlobalStyle from "../styles/styles";
+import GlobalStyle from "../styles/global-styles";
 import { Link } from "gatsby";
 import ButtonBlue from "../components/buttonBlue";
 import ButtonDarkBlue from "../components/buttonDarkBlue";

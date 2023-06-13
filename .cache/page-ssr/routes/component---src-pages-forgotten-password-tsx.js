@@ -1965,7 +1965,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles */ "./src/styles/styles.js");
+/* harmony import */ var _styles_global_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/global-styles */ "./src/styles/global-styles.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var _components_buttonWhite__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/buttonWhite */ "./src/components/buttonWhite.js");
 /* harmony import */ var _components_buttonBlue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/buttonBlue */ "./src/components/buttonBlue.js");
@@ -2015,7 +2015,7 @@ const Index = () => {
     // Effectuez des actions spécifiques à la confirmation du pop-up
     setIsPopupOpen(false);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TopBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_global_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TopBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
     src: "../images/logo.svg",
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Mot de passe oubli\xE9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -2155,19 +2155,21 @@ const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withCo
 })(["color:white;font-size:1.5rem;font-style:normal;margin-bottom:40px;"]);
 const GroupTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "pop-up__GroupTitle"
-})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;width:70%;"]);
+})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;width:80%;"]);
 const Popup = ({
   isOpen,
   onClose,
-  onConfirm
+  onConfirm,
+  title,
+  content
 }) => {
   if (!isOpen) {
     return null;
   }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupTitle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: "../images/validate.svg",
-    alt: "Autenticket"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "Ticket authentifi\xE9 !")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Voulez-vous ajouter l'\xE9v\xE8nement \xE0 votre porte-feuille ?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button1, {
+    alt: "check icon"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, content), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button1, {
     onClick: onClose
   }, "Non"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button2, {
     onClick: onConfirm
@@ -2205,10 +2207,10 @@ const Space = ({
 
 /***/ }),
 
-/***/ "./src/styles/styles.js":
-/*!******************************!*\
-  !*** ./src/styles/styles.js ***!
-  \******************************/
+/***/ "./src/styles/global-styles.js":
+/*!*************************************!*\
+  !*** ./src/styles/global-styles.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

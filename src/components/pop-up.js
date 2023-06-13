@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const PopupContainer = styled.div`
+backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
@@ -19,8 +19,9 @@ const PopupContent = styled.div`
   padding: 20px;
   border-radius: 10px;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
 `;
 
 const ButtonContainer = styled.div`
@@ -58,37 +59,38 @@ const Title = styled.p`
     font-size: 1.5rem;
     font-style: normal;
     margin-bottom: 40px;
+    margin-left: 10px;
 `;
 
 const GroupTitle = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
 `;
 
 
-const Popup = ({ isOpen, onClose, onConfirm }) => {
+const Popup = ({ isOpen, onClose, onConfirm, title, content }) => {
     if (!isOpen) {
       return null;
     }
   
     return (
-      <PopupContainer>
-        <PopupContent>
-        <GroupTitle>
-        <img src="../images/validate.svg" alt="Autenticket" />
-          <Title>Ticket authentifié !</Title>
-          </GroupTitle>
-          <p>Voulez-vous ajouter l'évènement à votre porte-feuille ?</p>
-  
-          <ButtonContainer>
-            <Button1 onClick={onClose}>Non</Button1>
-            <Button2 onClick={onConfirm}>Oui</Button2>
-          </ButtonContainer>
-        </PopupContent>
-      </PopupContainer>
+        <PopupContainer>
+          <PopupContent>
+            <GroupTitle>
+                <img src="../images/validate.svg" alt="check icon" />
+                <Title>{title}</Title>
+            </GroupTitle>
+            <p>{content}</p>
+    
+            <ButtonContainer>
+              <Button1 onClick={onClose}>Non</Button1>
+              <Button2 onClick={onConfirm}>Oui</Button2>
+            </ButtonContainer>
+          </PopupContent>
+        </PopupContainer>
     );
   };
   

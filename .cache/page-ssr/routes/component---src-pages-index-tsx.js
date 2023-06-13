@@ -2034,7 +2034,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const client = new _apollo_client__WEBPACK_IMPORTED_MODULE_0__.ApolloClient({
   uri: 'http://localhost:4000/graphql',
-  // Remplacez l'URL par celle de votre backend GraphQL
   cache: new _apollo_client__WEBPACK_IMPORTED_MODULE_1__.InMemoryCache()
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (client);
@@ -2054,14 +2053,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles */ "./src/styles/styles.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _styles_global_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/global-styles */ "./src/styles/global-styles.js");
 /* harmony import */ var _components_space__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/space */ "./src/components/space.js");
-/* harmony import */ var _components_buttonWhite__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/buttonWhite */ "./src/components/buttonWhite.js");
-/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @apollo/client */ "./node_modules/graphql-tag/lib/index.js");
-/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @apollo/client */ "./node_modules/@apollo/client/react/hooks/useQuery.js");
-/* harmony import */ var _apolloClient__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../apolloClient */ "./apolloClient.js");
-/* eslint-disable react-hooks/rules-of-hooks */
+/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @apollo/client */ "./node_modules/graphql-tag/lib/index.js");
+/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @apollo/client */ "./node_modules/@apollo/client/react/hooks/useQuery.js");
+/* harmony import */ var _apolloClient__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../apolloClient */ "./apolloClient.js");
+/* harmony import */ var _components_pop_up__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/pop-up */ "./src/components/pop-up.js");
+/* harmony import */ var _components_buttonWhite__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/buttonWhite */ "./src/components/buttonWhite.js");
 
 
 
@@ -2069,37 +2068,44 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__Wrapper"
-})(["display:flex;flex-direction:column;height:100vh;background-image:url(\"../images/font_final.png\");background-position:center;background-repeat:no-repeat;background-size:cover;"]);
-const TopBar = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+})(["display:flex;height:100vh;background-image:url(\"../images/font_final.png\");background-position:center;background-repeat:no-repeat;background-size:cover;"]);
+const WrapperColumn = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "pages__WrapperColumn"
+})(["display:flex;flex-direction:column;height:100vh;"]);
+const TopBar = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__TopBar"
 })(["display:flex;align-items:space-evenly;height:100px;padding:2%  10% 0 10%;"]);
-const Logo = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].img.withConfig({
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].img.withConfig({
   displayName: "pages__Logo"
 })(["height:60px;"]);
-const TextContent = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const TextContent = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__TextContent"
 })(["display:flex;justify-content:flex-start;align-items:center;width:50%;color:white;padding:0 10% 0 10%;"]);
-const Choice = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const Choice = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__Choice"
 })(["display:flex;flex-direction:column;height:100px;color:white;padding:0 10% 0 10%;"]);
-const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const GroupInput = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__GroupInput"
 })(["width:70%;"]);
-const Input = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].input.withConfig({
+const Input = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].input.withConfig({
   displayName: "pages__Input"
 })(["background-color:white;color:black;border-radius:10px 0 0 10px;width:100%;height:35px;border:solid 1px #19a7ce;cursor:pointer;"]);
-const SelectInput = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const SelectInput = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__SelectInput"
 })(["display:flex;select{border-radius:10px;width:100%;height:35px;border:solid 1px #19a7ce;font-size:1.5rem;padding:0 1rem;&:focus{outline:none;border-color:#888;}}"]);
-const WrapSearchInput = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+const WrapSearchInput = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "pages__WrapSearchInput"
 })(["display:flex;flex-direction:row;"]);
-const Button = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].button.withConfig({
+const Button = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].button.withConfig({
   displayName: "pages__Button"
 })(["background-color:#19a7ce;color:white;border-radius:0 10px 10px 0;border:solid 1px #19a7ce;cursor:pointer;"]);
-const GET_EVENTS = _apollo_client__WEBPACK_IMPORTED_MODULE_6__.gql`
+const RightImage = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
+  displayName: "pages__RightImage"
+})(["flex-direction:column;img{height:100%;};width:130px;"]);
+const GET_EVENTS = _apollo_client__WEBPACK_IMPORTED_MODULE_7__.gql`
   query GetEvents {
     getEvents {
       id
@@ -2107,7 +2113,7 @@ const GET_EVENTS = _apollo_client__WEBPACK_IMPORTED_MODULE_6__.gql`
     }
   }
 `;
-const CHECK_TICKET = _apollo_client__WEBPACK_IMPORTED_MODULE_6__.gql`
+const CHECK_TICKET = _apollo_client__WEBPACK_IMPORTED_MODULE_7__.gql`
   query IsTicketExist($ticket: String!, $selectedEvent: String!) {
     isTicketExist(numTicket: $ticket, nameEvent: $selectedEvent)
   }`;
@@ -2116,10 +2122,9 @@ const Index = () => {
     loading,
     error,
     data
-  } = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_7__.useQuery)(GET_EVENTS, {
-    client: _apolloClient__WEBPACK_IMPORTED_MODULE_4__["default"]
+  } = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_8__.useQuery)(GET_EVENTS, {
+    client: _apolloClient__WEBPACK_IMPORTED_MODULE_3__["default"]
   });
-  const events = data.getEvents;
   const {
     0: ticket,
     1: setTicket
@@ -2128,7 +2133,20 @@ const Index = () => {
     0: selectedEvent,
     1: setSelectedEvent
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const {
+    0: isPopupOpen,
+    1: setIsPopupOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: ticketExist,
+    1: setTicketExist
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
 
+  /* get all events */
+  const events = (data === null || data === void 0 ? void 0 : data.getEvents) || [];
   /* handle event selected */
   const handleSelect = event => {
     setSelectedEvent(event.target.value);
@@ -2140,24 +2158,35 @@ const Index = () => {
   };
 
   /* Check if ticket exist in db */
-  function checkTicket(ticket, selectedEvent) {
-    if (ticket && selectedEvent) {
-      const data = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_7__.useQuery)(CHECK_TICKET, {
-        client: _apolloClient__WEBPACK_IMPORTED_MODULE_4__["default"],
-        variables: {
-          ticket,
-          selectedEvent
-        }
-      });
-      console.log('CHECK', data);
-    }
-  }
+  const checkTicket = () => {
+    _apolloClient__WEBPACK_IMPORTED_MODULE_3__["default"].query({
+      query: CHECK_TICKET,
+      variables: {
+        ticket,
+        selectedEvent
+      }
+    }).then(result => {
+      var _result$data;
+      const isTicketExist = (_result$data = result.data) === null || _result$data === void 0 ? void 0 : _result$data.isTicketExist;
+      if (isTicketExist === true) {
+        setIsPopupOpen(true);
+        setTicketExist(true);
+        console.log('ticket exists');
+      } else {
+        setIsPopupOpen(true);
+        setTicketExist(false);
+        console.log('ticket does not exist');
+      }
+    }).catch(error => {
+      console.error('Error checking ticket:', error);
+    });
+  };
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Loading...");
   if (error) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Error fetching events: ", error.message);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TopBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_global_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(WrapperColumn, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TopBar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Logo, {
     src: "../images/logo.svg",
     alt: "Logo"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonWhite__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonWhite__WEBPACK_IMPORTED_MODULE_5__["default"], {
     to: "/login"
   }, "Connexion")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Strong authentification of your ticket")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 30
@@ -2192,7 +2221,22 @@ const Index = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "search icon",
     src: "../images/search.svg"
-  })))))));
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(RightImage, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "../images/logo-without-title.svg",
+    alt: "illustration"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "../images/logo-without-title.svg",
+    alt: "illustration"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "../images/logo-without-title.svg",
+    alt: "illustration"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_pop_up__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: ticketExist === true ? "Ticket authentifié" : "Ticket non authentifié",
+    content: ticketExist === true ? "Voulez-vous ajouter l'évènement à votre compte ?" : "Votre ticket n'est pas authentifié. Ce numéro de ticket n'existe pas pour l'évènement choisi. Voulez-vous trouver des revendeurs agrées ?",
+    isOpen: isPopupOpen,
+    onClose: handleClosePopup,
+    onConfirm: () => {}
+  }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
@@ -2231,6 +2275,66 @@ const ButtonWhite = ({
 
 /***/ }),
 
+/***/ "./src/components/pop-up.js":
+/*!**********************************!*\
+  !*** ./src/components/pop-up.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+const PopupContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "pop-up__PopupContainer"
+})(["position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;"]);
+const PopupContent = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "pop-up__PopupContent"
+})(["background-color:#0c134f;padding:20px;border-radius:10px;display:flex;flex-direction:column;align-items:center;"]);
+const ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "pop-up__ButtonContainer"
+})(["display:flex;justify-content:center;margin-top:30px;"]);
+const Button1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
+  displayName: "pop-up__Button1"
+})(["margin-left:10px;border-radius:15px;border:none;text-decoration:none;color:#0c134f;width:50px;height:30px;margin-right:20px;font-weight:bold;"]);
+const Button2 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
+  displayName: "pop-up__Button2"
+})(["margin-left:10px;border-radius:15px;border:none;text-decoration:none;color:white;width:50px;height:30px;background-color:#19a7ce;font-weight:bold;"]);
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
+  displayName: "pop-up__Title"
+})(["color:white;font-size:1.5rem;font-style:normal;margin-bottom:40px;"]);
+const GroupTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "pop-up__GroupTitle"
+})(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;width:80%;"]);
+const Popup = ({
+  isOpen,
+  onClose,
+  onConfirm,
+  title,
+  content
+}) => {
+  if (!isOpen) {
+    return null;
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PopupContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupTitle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "../images/validate.svg",
+    alt: "check icon"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, content), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button1, {
+    onClick: onClose
+  }, "Non"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Button2, {
+    onClick: onConfirm
+  }, "Oui"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popup);
+
+/***/ }),
+
 /***/ "./src/components/space.js":
 /*!*********************************!*\
   !*** ./src/components/space.js ***!
@@ -2259,10 +2363,10 @@ const Space = ({
 
 /***/ }),
 
-/***/ "./src/styles/styles.js":
-/*!******************************!*\
-  !*** ./src/styles/styles.js ***!
-  \******************************/
+/***/ "./src/styles/global-styles.js":
+/*!*************************************!*\
+  !*** ./src/styles/global-styles.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

@@ -845,7 +845,7 @@ exports.components = {
   "component---src-pages-index-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-index-tsx */ "component---src-pages-index-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.tsx?export=default */ "./src/pages/index.tsx?export=default")),
   "component---src-pages-inscription-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-inscription-tsx */ "component---src-pages-inscription-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/inscription.tsx?export=default */ "./src/pages/inscription.tsx?export=default")),
   "component---src-pages-profil-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-profil-tsx */ "component---src-pages-profil-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/profil.tsx?export=default */ "./src/pages/profil.tsx?export=default")),
-  "component---src-pages-test-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-test-tsx */ "component---src-pages-test-tsx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/test.tsx?export=default */ "./src/pages/test.tsx?export=default"))
+  "component---src-pages-test-tsx": () => __webpack_require__.e(/*! import() | component---src-pages-test-tsx */ "component---src-pages-test-tsx").then(__webpack_require__.t.bind(__webpack_require__, /*! ./../../../src/pages/test.tsx?export=default */ "./src/pages/test.tsx?export=default", 23))
 };
 
 exports.head = {};

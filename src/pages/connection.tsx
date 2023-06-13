@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GlobalStyle from "../styles/styles";
+import GlobalStyle from "../styles/global-styles";
 import { Link } from "gatsby";
 import ButtonBlue from "../components/buttonBlue";
 import ButtonWhite from "../components/buttonWhite";
@@ -101,7 +101,7 @@ const Connection = () =>
           <Space size={15} />
           <label style={{ display: "block" }}>Mot de passe</label>
           <Input type="password" name="password" />
-          <Link to="/">Mot de passe oublié ?</Link>
+          <Link to="/forgotten-password">Mot de passe oublié ?</Link>
         </GroupInput>
         <Space size={20} />
         <ButtonBlue to="/inscription">Connexion</ButtonBlue>

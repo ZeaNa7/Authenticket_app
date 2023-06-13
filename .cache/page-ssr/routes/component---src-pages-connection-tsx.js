@@ -1965,7 +1965,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _styles_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles */ "./src/styles/styles.js");
+/* harmony import */ var _styles_global_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/global-styles */ "./src/styles/global-styles.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var _components_buttonBlue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/buttonBlue */ "./src/components/buttonBlue.js");
 /* harmony import */ var _components_buttonWhite__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/buttonWhite */ "./src/components/buttonWhite.js");
@@ -2004,7 +2004,7 @@ const BottomBar = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.
 const SubTextLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_6__["default"])(props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, props)).withConfig({
   displayName: "connection__SubTextLink"
 })(["font-size:0.8em;color:white;margin:0;padding:0;text-decoration:none;"]);
-const Connection = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Connexion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
+const Connection = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_global_styles__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Connexion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
   size: 40
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GroupInput, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
   style: {
@@ -2023,7 +2023,7 @@ const Connection = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default
   type: "password",
   name: "password"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/"
+  to: "/forgotten-password"
 }, "Mot de passe oubli\xE9 ?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_space__WEBPACK_IMPORTED_MODULE_5__["default"], {
   size: 20
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_buttonBlue__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -2141,10 +2141,10 @@ const Space = ({
 
 /***/ }),
 
-/***/ "./src/styles/styles.js":
-/*!******************************!*\
-  !*** ./src/styles/styles.js ***!
-  \******************************/
+/***/ "./src/styles/global-styles.js":
+/*!*************************************!*\
+  !*** ./src/styles/global-styles.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

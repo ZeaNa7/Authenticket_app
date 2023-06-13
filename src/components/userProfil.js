@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import GlobalStyle from "../styles/styles";
+import GlobalStyle from "../styles/global-styles";
 import ButtonWhite from "./buttonWhite";
 
 const Wrapper = styled.div`

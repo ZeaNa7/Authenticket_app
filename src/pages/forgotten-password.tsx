@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import GlobalStyle from "../styles/styles";
+import GlobalStyle from "../styles/global-styles";
 import { Link } from "gatsby";
 import ButtonWhite from "../components/buttonWhite";
 import ButtonBlue from "../components/buttonBlue";
