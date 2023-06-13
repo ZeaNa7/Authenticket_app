@@ -1,10 +1,10 @@
 var plugins = [{
       name: 'gatsby-plugin-styled-components',
-      plugin: require('C:/Dev/Authenticket_v1/authenticket/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
+      plugin: require('C:/Users/paulr/Documents/code/authenticket/Authenticket_app/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"topLevelImportPaths":[],"pure":false,"disableVendorPrefixes":false},
     },{
       name: 'partytown',
-      plugin: require('C:/Dev/Authenticket_v1/authenticket/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('C:/Users/paulr/Documents/code/authenticket/Authenticket_app/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */

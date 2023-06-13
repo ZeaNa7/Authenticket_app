@@ -84,7 +84,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const client = new _apollo_client__WEBPACK_IMPORTED_MODULE_0__.ApolloClient({
   uri: 'http://localhost:4000/graphql',
-  // Remplacez l'URL par celle de votre backend GraphQL
   cache: new _apollo_client__WEBPACK_IMPORTED_MODULE_1__.InMemoryCache()
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (client);

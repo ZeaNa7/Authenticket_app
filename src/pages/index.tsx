@@ -1,11 +1,11 @@
-
 import React, { useState } from "react";
 import styled from "styled-components";
 import GlobalStyle from "../styles/styles";
 import Space from "../components/space";
 import ButtonWhite from "../components/buttonWhite";
-import { gql, useQuery } from '@apollo/client';
-import client from '../../apolloClient';
+import { gql, useQuery } from "@apollo/client";
+import Modal from "react-modal";
+import client from "../../apolloClient";
 
 
 const Wrapper = styled.div`
@@ -102,10 +102,42 @@ const CHECK_TICKET = gql`
   }`;
 
 
+  const ModalContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const ModalText = styled.p`
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1rem;
+`;
+
+const ModalButton = styled.button`
+  background-color: #19a7ce;
+  color: white;
+  border-radius: 10px;
+  border: solid 1px #19a7ce;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+`;
+
 const Index = () => {
   const { loading, error, data } = useQuery(GET_EVENTS, { client });
   const [ticket, setTicket] = useState('');
   const [selectedEvent, setSelectedEvent] = useState('');
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [isTicketValid, setIsTicketValid] = useState(false);
+
+  const handleModalOpen = (isValid) => {
+    setIsTicketValid(isValid);
+    setModalIsOpen(true);
+  };
+  const handleModalClose = () => {
+    setModalIsOpen(false);
+  };
   
   const events = data?.getEvents || [];
   /* handle event selected */
@@ -124,20 +156,20 @@ const Index = () => {
     console.log('selectedEvent', selectedEvent);
 
     client
-      .query({
-        query: CHECK_TICKET,
-        variables: { ticket, selectedEvent }
-      })
-      .then((result) => {
+    .query({
+      query: CHECK_TICKET,
+      variables: { ticket, selectedEvent },
+    })
+    .then((result) => {
         const isTicketExist = result.data?.isTicketExist;
         if (isTicketExist === true) {
-          console.log('ticket exists');
+          handleModalOpen(true);
         } else {
-          console.log('ticket does not exist');
+          handleModalOpen(false);
         }
       })
       .catch((error) => {
-        console.error('Error checking ticket:', error);
+        console.error("Error checking ticket:", error);
       });
   };
 
@@ -191,8 +223,38 @@ const Index = () => {
         </Choice>
         
       </Wrapper>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={handleModalClose}
+        contentLabel="Ticket Modal"
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+          },
+          content: {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            background: "#fff",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "80%",
+            maxWidth: "400px",
+            borderRadius: "10px",
+            padding: "2rem",
+          },
+        }}
+      >
+        <ModalContent>
+          <ModalText>
+            {isTicketValid ? "Ticket valide !" : "Ticket non valide."}
+          </ModalText>
+          <ModalButton onClick={handleModalClose}>Fermer</ModalButton>
+        </ModalContent>
+      </Modal>
     </>
   );
 };
-export default Index;
 
+export default Index;
